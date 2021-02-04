@@ -28,7 +28,7 @@ key_item_five = types.InlineKeyboardButton(text='Как мило! А что ещ
 keyboard_item_five.add(key_item_five)
 
 keyboard_item_six = types.InlineKeyboardMarkup()
-key_item_six_yes = types.InlineKeyboardButton(text='Хватит! Живо к нам на работу!', callback_data='item_six_yes')
+key_item_six_yes = types.InlineKeyboardButton(text='Хватит! Живо к нам на собеседование!', callback_data='item_six_yes')
 keyboard_item_six.add(key_item_six_yes)
 key_item_six_no = types.InlineKeyboardButton(text='Хватит! Просто хватит=)', callback_data='item_six_no')
 keyboard_item_six.add(key_item_six_no)
