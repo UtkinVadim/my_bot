@@ -32,7 +32,7 @@ def buttons(call):
         bot.send_photo(call.from_user.id, love_it, reply_markup=keyboard.keyboard_item_three)
     if call.data == "item_three":
         bot.send_message(call.from_user.id,
-                         'В четвертых - он никогда не отчаиваится, если что-то не получается, а добивается желаемого результата!',
+                         'В четвертых - он никогда не отчаивается, если что-то не получается, а добивается желаемого результата!',
                          reply_markup=keyboard.keyboard_item_four)
     if call.data == "item_four":
         some_child = open('some_child.jpg', 'rb')
