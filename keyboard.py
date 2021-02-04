@@ -4,6 +4,8 @@ from telebot import types
 keyboard_start = types.InlineKeyboardMarkup()
 start_key_yes = types.InlineKeyboardButton(text='Да!', callback_data='start_yes')
 keyboard_start.add(start_key_yes)
+start_key_no = types.InlineKeyboardButton(text='Нет!', callback_data='start_no')
+keyboard_start.add(start_key_no)
 
 keyboard_item_one = types.InlineKeyboardMarkup()
 key_item_one = types.InlineKeyboardButton(text="Что ещё?", callback_data='item_one')
@@ -33,8 +35,12 @@ keyboard_item_six.add(key_item_six_no)
 
 
 # Точно не рассказывать?
-# keyboard_start_answer = types.InlineKeyboardMarkup()
-# start_answer_no = types.InlineKeyboardButton(text="Ладно, рассказывай!", callback_data='start_answer_no')
-# keyboard_start_answer.add(start_answer_no)
-# start_answer_yes = types.InlineKeyboardButton(text="Точно!", callback_data='start_answer_yes')
-# keyboard_start_answer.add(start_answer_yes)
+keyboard_start_answer = types.InlineKeyboardMarkup()
+start_answer_no = types.InlineKeyboardButton(text="Ладно, рассказывай!", callback_data='start_yes')
+keyboard_start_answer.add(start_answer_no)
+start_answer_yes = types.InlineKeyboardButton(text="Точно!", callback_data='start_no')
+keyboard_start_answer.add(start_answer_yes)
+
+keyboard_url = types.InlineKeyboardMarkup()
+url_key = types.InlineKeyboardButton(text='Ссылка на резюме.', url="https://spb.hh.ru/resume/befcc292ff08a997a60039ed1f693936706a48")
+keyboard_url.add(url_key)
