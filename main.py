@@ -44,7 +44,8 @@ def buttons(call):
                          reply_markup=keyboard.keyboard_item_six)
     if call.data == "item_six_yes":
         bot.send_message(call.from_user.id,
-                         'Ура! Напишите ему на почту utkinvadim1991@gmail.com, или позвоните ему по телефону +7-981-687-38-20. Он будет очень рад этой новости!', reply_markup=keyboard.keyboard_url)
+                         'Ура! Напишите ему на почту utkinvadim1991@gmail.com, или позвоните ему по телефону +7-981-687-38-20. Он будет очень рад этой новости!',
+                         reply_markup=keyboard.keyboard_url)
     if call.data == "item_six_no":
         bot.send_message(call.from_user.id,
                          'Хорошо, зато теперь вы знаете немного больше про Вадима!=) Всего Вам доброго и хорошего дня!=)')
